@@ -1,0 +1,33 @@
+{
+  "name": "aws-practica",
+  "version": "1.0.0",
+  "description": "Mi portafolio Profesional",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "npx serve . -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferfloo27/aws-practica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferfloo27/aws-practica/issues"
+  },
+  "homepage": "https://github.com/ferfloo27/aws-practica#readme",
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
+  }
+}

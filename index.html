@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero-title">
+        Hola, soy <br />
+        <span class="gradient-text" id="typedName">Fernando López</span>
+      </h1>
+      <p class="hero-subtitle" id="typedRole"></p>
+      <p class="hero-description">
+        Desarrollador Full Stack apasionado por crear experiencias digitales modernas,
+        escalables y con impacto real. Especializado en cloud con AWS.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          Ver proyectos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Contáctame</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Años exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="20">0</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-label">Clientes</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">portfolio.ts</span>
+        </div>
+        <pre class="code-content"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-string">"Fernando López"</span>,
+  <span class="c-prop">role</span>: <span class="c-string">"Full Stack Dev"</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-string">"TypeScript"</span>,
+    <span class="c-string">"React"</span>,
+    <span class="c-string">"Node.js"</span>,
+    <span class="c-string">"AWS"</span>
+  ],
+  <span class="c-prop">passion</span>: <span class="c-string">"Building things"</span>,
+  <span class="c-prop">available</span>: <span class="c-keyword">true</span>
+};</code></pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sobre mí</span>
+        <h2 class="section-title">¿Quién soy?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image-container">
+            <div class="about-avatar">
+              <span>FL</span>
+            </div>
+            <div class="about-image-decoration"></div>
+          </div>
+          <div class="about-info-cards">
+            <div class="info-card">
+              <span class="info-icon">🎓</span>
+              <div>
+                <strong>Ingeniería en Sistemas</strong>
+                <small>Universidad Nacional</small>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Latinoamérica</strong>
+                <small>Remoto disponible</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            Soy un desarrollador Full Stack con más de <strong>3 años de experiencia</strong> construyendo
+            aplicaciones web modernas. Me especializo en el ecosistema JavaScript/TypeScript tanto en
+            frontend como backend, y tengo experiencia sólida desplegando soluciones en <strong>AWS</strong>.
+          </p>
+          <p class="about-text">
+            Me apasiona escribir código limpio, escalable y bien documentado. Disfruto resolver
+            problemas complejos y transformarlos en interfaces intuitivas que los usuarios amen usar.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Arquitectura de microservicios en AWS
+            </div>
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              APIs RESTful y GraphQL
+            </div>
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              CI/CD con GitHub Actions
+            </div>
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Bases de datos SQL y NoSQL
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            Descargar CV
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tecnologías</span>
+        <h2 class="section-title">Stack & Skills</h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">🖥️</span> Frontend
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-level="90">
+              <div class="skill-icon ts">TS</div>
+              <span class="skill-name">TypeScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div>
+            </div>
+            <div class="skill-card" data-level="88">
+              <div class="skill-icon react">⚛</div>
+              <span class="skill-name">React</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 88%"></div></div>
+            </div>
+            <div class="skill-card" data-level="80">
+              <div class="skill-icon next">N</div>
+              <span class="skill-name">Next.js</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div>
+            </div>
+            <div class="skill-card" data-level="85">
+              <div class="skill-icon css">CSS</div>
+              <span class="skill-name">CSS / Tailwind</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">⚙️</span> Backend
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-level="85">
+              <div class="skill-icon node">JS</div>
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div>
+            </div>
+            <div class="skill-card" data-level="78">
+              <div class="skill-icon python">Py</div>
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 78%"></div></div>
+            </div>
+            <div class="skill-card" data-level="82">
+              <div class="skill-icon db">DB</div>
+              <span class="skill-name">PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 82%"></div></div>
+            </div>
+            <div class="skill-card" data-level="75">
+              <div class="skill-icon mongo">M</div>
+              <span class="skill-name">MongoDB</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="category-title">
+            <span class="category-icon">☁️</span> Cloud & DevOps
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-level="80">
+              <div class="skill-icon aws">AWS</div>
+              <span class="skill-name">AWS</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div>
+            </div>
+            <div class="skill-card" data-level="75">
+              <div class="skill-icon docker">🐳</div>
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 75%"></div></div>
+            </div>
+            <div class="skill-card" data-level="78">
+              <div class="skill-icon git">Git</div>
+              <span class="skill-name">Git / CI-CD</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 78%"></div></div>
+            </div>
+            <div class="skill-card" data-level="70">
+              <div class="skill-icon tf">TF</div>
+              <span class="skill-name">Terraform</span>
+              <div class="skill-bar"><div class="skill-fill" style="--level: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trabajo</span>
+        <h2 class="section-title">Proyectos destacados</h2>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Trabajemos juntos</h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente? Me encantaría escucharte.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:fernando@example.com">fernando@example.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="#" target="_blank">linkedin.com/in/fernandolopez</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/ferfloo27" target="_blank">github.com/ferfloo27</a>
+            </div>
+          </div>
+          <div class="availability-badge">
+            <span class="badge-dot pulse"></span>
+            Disponible para freelance y tiempo completo
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required />
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Enviar mensaje</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ ¡Mensaje enviado! Te responderé pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-text">Diseñado y desarrollado con ❤️ por Fernando López</p>
+        <div class="footer-links">
+          <a href="https://github.com/ferfloo27" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Fernando López. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
